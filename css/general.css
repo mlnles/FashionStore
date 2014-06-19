@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Bebas'; /*a name to be used later*/
+    src: url('https://www.dropbox.com/s/8njlhu0uybf9oz8/BEBAS___.TTF?dl=1'); /*URL to font*/
+}
 body {
     background-color: #f6f6f4;
     margin: 0;
@@ -7,6 +11,41 @@ section, header > div, footer > div {
     margin: 0 auto;
     width: 940px;    
 }
+/*-----------------------------*/
+.banner {
+    float: right;
+}
+section div {
+    background-color: gray;
+}
+section ul {    
+    display: inline-block;            
+}
+section li { 
+    margin-right: 20px;
+    display: inline-block;    
+    font-family: 'Bebas';
+}
+section input {    
+    float: right;           
+    background: white url(https://www.dropbox.com/s/1uesd8pstust827/magnifier.png?dl=1) right no-repeat;
+    border-radius: 20px;
+    border: 0;
+    padding: 5px;
+    width: 100px;         
+    margin-top: 12px;
+}
+.clear {    
+    clear: both;
+}
+nav{
+    background-color: #c3c3c3;
+}
+
+
+
+
+
 /*------------------------------*/
 header ul {
     padding-left: 0;
