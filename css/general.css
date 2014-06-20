@@ -40,7 +40,18 @@ section input {
 }
 nav{
     background-color: #c3c3c3;
+    margin-bottom: 20px;
 }
+/*----------------------------------*/
+.s-left {
+    width: 640px; 
+    background-color: white;
+}
+.s-left{
+    margin: 0 auto;
+} 
+    
+
 
 
 
