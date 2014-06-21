@@ -1,53 +1,91 @@
 @font-face {
-    font-family: 'Bebas'; /*a name to be used later*/
-    src: url('https://www.dropbox.com/s/8njlhu0uybf9oz8/BEBAS___.TTF?dl=1'); /*URL to font*/
+    font-family:'Bebas';
+    src: url('https://www.dropbox.com/s/8njlhu0uybf9oz8/BEBAS___.TTF?dl=1');
+}
+@font-face {
+    font-family:'HelveticaLTStdRoman';
+    src: url('https://www.dropbox.com/s/r90qlv8ugl01wuc/HelveticaLTStd-Roman.otf?dl=1');
+}
+@font-face {
+    font-family:'HelveticaLTStdBold';
+    src: url('https://www.dropbox.com/s/w96idv5sab65oth/HelveticaLTStd-Bold.otf?dl=1');
 }
 body {
     background-color: #f6f6f4;
     margin: 0;
     padding: 0;
+    font-family:'HelveticaLTStdBold';
+    font-size: 10pt;
 }
 section, header > div, footer > div {
     margin: 0 auto;
-    width: 940px;    
+    width: 940px;
 }
 /*-----------------------------*/
-.banner {
+ .banner {
     float: right;
 }
-section div {
-    background-color: gray;
+section ul {
+    display: inline-block;
 }
-section ul {    
-    display: inline-block;            
-}
-section li { 
+section li {
     margin-right: 20px;
-    display: inline-block;    
-    font-family: 'Bebas';
+    display: inline-block;
+    font-family:'Bebas';
 }
-section input {    
-    float: right;           
+.search {
+    float: right;
     background: white url(https://www.dropbox.com/s/1uesd8pstust827/magnifier.png?dl=1) right no-repeat;
     border-radius: 20px;
     border: 0;
     padding: 5px;
-    width: 100px;         
+    width: 100px;
     margin-top: 12px;
 }
-.clear {    
+.clear {
     clear: both;
 }
-nav{
+nav {
     background-color: #c3c3c3;
+    margin-bottom: 20px;
 }
-
-
-
-
-
+/*----------------------------------*/
+ .s-left {
+    width: 640px;
+    background-color: white;
+    float: left;
+}
+.s-right {
+    margin-left: 650px;
+}
+/*------------------------*/
+ .for-cart {
+    float: left;
+    font-family:'HelveticaLTStdRoman';
+    margin-right: 21px;
+}
+.for-cart label {
+    background: url(https://www.dropbox.com/s/n7uc6t9flsyjehj/cart.png?dl=1) no-repeat;
+    margin-right: 20px;
+}
+.for-cart input {
+    margin-left: 10px;
+    background-color: inherit;
+    border: none;
+}
+.for-cart p {
+    /*font: .8em Times New Roman;*/
+    padding: 5px 0;
+    margin: 0;
+}
+.for-cart span {
+    margin-right: 5px;
+}
+.price {
+    color: red;
+}
 /*------------------------------*/
-header ul {
+ header ul {
     padding-left: 0;
 }
 header li {
@@ -57,7 +95,7 @@ header li {
     padding: 20px 0;
 }
 /*---------------------------------------*/
-header form {
+ header form {
     color: white;
     float: right;
     padding: 15px 0;
@@ -71,14 +109,65 @@ header input {
 }
 header input[type='submit'] {
     background-color: #ea6a53;
-    color: white;    
+    color: white;
 }
 header a {
     color: #ea6a53;
 }
-
-
-
 header, footer {
     background-color: #2d2d2d;
+}
+/*---------------------------------------*/
+ footer {
+    padding: 20px 0 30px 0;
+}
+footer img {
+    float: right;
+    cursor: pointer;
+}
+footer .caption {
+    float: left;
+    padding-top: 20px;
+    color: #c3c3c3;
+    font-family:'HelveticaLTStdRoman';
+}
+footer:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+/*---------------------------------------*/
+ .s-related {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-family:'HelveticaLTStdRoman';
+}
+.s-related h2 {
+    font-family:'Bebas';
+    margin: 0;
+}
+.s-related > p {
+    color: #858585;
+}
+.s-related .gallery {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+}
+.s-related .tile {
+    margin-right: 20px;
+    display: inline-block;
+}
+.s-related .tile a {
+    color: black;
+}
+.s-related .gallery > * {
+    vertical-align: middle;
+}
+.s-related .gallery .slide-prev {
+    margin-right: 35px;
+}
+.s-related .gallery .slide-next {
+    margin-left: 15px;
 }
